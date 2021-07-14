@@ -7,6 +7,7 @@ import Task from './Task.js';
 function App() {
   return (
     <div className="container">
+      <h1 className="title">Lista de tareas</h1>
       <Form />
       <TaskList />
 

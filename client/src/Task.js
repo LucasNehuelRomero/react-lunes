@@ -1,13 +1,16 @@
-const Task = () => {
+const Task = props => {
+  // props //
+  const { text, done } = props.task; // destructuring //
+  //  render //
+  const style= {
+    textDecoration: done ? 'line-through': 'done'
+  };
+
   return (
-    <div ClassName='taskbox'>
-    <ul>
-      <li>Tarea 1</li>
-      <li>Tarea 2</li>
-      <li>Tarea 3</li>
-      <li>Tarea 4</li>
-    </ul>
-    </div>
+    <li style={style}>{text}
+    <input type="checkbox" />
+    <button>X</button>
+    </li>
   );
 };
 

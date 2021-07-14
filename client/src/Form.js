@@ -1,7 +1,8 @@
 const Form = () => {
   return (
     <form>
-      <h1>Buscar tareas</h1>
+      <input type="text" />
+      <input type="submit" value="Guardar" />
     </form>
   );
 };
